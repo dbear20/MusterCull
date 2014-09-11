@@ -4,7 +4,7 @@
 #
 name: MusterCull
 main: com.untamedears.mustercull.MusterCull
-version: 1.3
+version: 1.4.1
 description: Removes persistent mobs due to overcrowding and other purposes.
 author: Celdecea
 commands:
@@ -52,6 +52,16 @@ commands:
       Examples:
       * /mculllimit SPAWN CREEPER 16 64
       * /mculllimit DAMAGE SHEEP 16 32
+  mcullhardlimitstrategy:
+    description: Sets the hard limit culling strategy.
+    aliases: [mustercullhardlimitstrategy]
+    permission: mustercull.*
+    usage: |
+      /mcullhardlimitstrategy STRATEGY
+      Where strategy is either RANDOM or PRIORITY
+      Examples:
+      * /mcullhardlimitstrategy PRIORITY
+      * /mcullhardlimitstrategy RANDOM
   mcullhardlimit:
     description: Modifies the hard mob limit.
     aliases: [mustercullhardlimit]

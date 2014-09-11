@@ -1,135 +1,183 @@
-#
+# 
 # MusterCull
 # Bukkit plug-in default configuration file.
-#
 
-#limits:
-#- type: CREEPER
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: SKELETON
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: SPIDER
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: ZOMBIE
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: SLIME
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: GHAST
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: PIGZOMBIE
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: ENDERMAN
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: CAVESPIDER
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: SILVERFISH
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: BLAZE
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: LAVASLIME
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: ENDERDRAGON
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: PIG
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: SHEEP
-#  limit: 6
-#  culling: SPAWN
-#  range: 0
-#- type: COW
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: CHICKEN
-#  limit: 12
-#  culling: SPAWN
-#  range: 0
-#- type: SQUID
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: WOLF
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: MUSHROOMCOW
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: SNOWMAN
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: OZELOT
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: VILLAGERGOLEM
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
-#- type: VILLAGER
-#  limit: 0
-#  culling: SPAWN
-#  range: 0
+limits:
+- type: CREEPER
+  culling: SPAWN
+  limit: 20
+  range: 10
+- type: CREEPER
+  culling: DAMAGE
+  limit: 50
+  range: 30
+- type: SKELETON
+  culling: SPAWNER
+  limit: 50
+  range: 30
+- type: SKELETON
+  culling: SPAWN
+  limit: 20
+  range: 10
+- type: SKELETON
+  culling: DAMAGE
+  limit: 50
+  range: 30
+- type: SPIDER
+  culling: SPAWNER
+  limit: 50
+  range: 30
+- type: SPIDER
+  culling: SPAWN
+  limit: 20
+  range: 10
+- type: SPIDER
+  culling: DAMAGE
+  limit: 50
+  range: 30
+- type: ZOMBIE
+  culling: SPAWNER
+  limit: 50
+  range: 30
+- type: ZOMBIE
+  culling: SPAWN
+  limit: 20
+  range: 10
+- type: ZOMBIE
+  culling: DAMAGE
+  limit: 50
+  range: 30
+- type: CAVESPIDER
+  culling: SPAWNER
+  limit: 50
+  range: 30
+- type: BLAZE
+  culling: SPAWNER
+  limit: 50
+  range: 30
+- type: PIG
+  culling: DAMAGE
+  limit: 30
+  range: 5
+- type: SHEEP
+  culling: DAMAGE
+  limit: 30
+  range: 5
+- type: COW
+  culling: DAMAGE
+  limit: 30
+  range: 5
+- type: CHICKEN
+  culling: DAMAGE
+  limit: 30
+  range: 5
+- type: SQUID
+  culling: SPAWN
+  limit: 50
+  range: 5
+- type: WOLF
+  culling: DAMAGE
+  limit: 30
+  range: 50
+- type: MUSHROOMCOW
+  culling: DAMAGE
+  limit: 30
+  range: 8
+- type: SNOWMAN
+  culling: DAMAGE
+  limit: 30
+  range: 50
+- type: OZELOT
+  culling: DAMAGE
+  limit: 50
+  range: 5
+- type: VILLAGERGOLEM
+  culling: DAMAGE
+  limit: 50
+  range: 5
+- type: VILLAGER
+  culling: DAMAGE
+  limit: 50
+  range: 5
+- type: PIGZOMBIE
+  limit: 50
+  culling: SPAWN
+  range: 250
+- type: PIGZOMBIE
+  culling: DAMAGE
+  limit: 20
+  range: 5
 
 # The amount of damage to apply to mobs which are considered crowded under the
 # DAMAGE method of culling.
-damage: 6
+damage: 20
 
 # The percent chance that a mob will be damaged if crowded under the DAMAGE
 # method of culling.
-damage_chance: 75
-
-# The number of ticks between invocations of the damage method for mobs.
-ticks_between_damage: 20
+damage_chance: 100
 
 # The number of entities to damage each round of the laborer.
-damage_count: 1
+damage_count: 30
+
+# The number of ticks between invocations of the damage method for mobs.
+ticks_between_damage: 10
+
+# Number of entities before the damage laborer cares to run.
+mob_limit: 10
+
+# Percent of total entities a mob must be to be queued for damage.
+mob_limit_percent: 15
 
 # Whether to print a message when mobs are damaged. 
 damage_notify: false
 
+# Whether to enable the monster cull to each world's spawn level.
+enable_monster_cull_to_spawn: true
+
+# Minimum % aggression factor for the monster cull pass.
+min_monster_cull_aggression: -20
+
+# Maximum % aggression factor for the monster cull pass.
+max_monster_cull_aggression: 10
+
+# Maximum % of monsters to kill in each monster cull pass
+max_monster_cull_per_pass: 10
+
 # The maximum number of living entities allowed to be loaded.
-mob_max_mob: 10000
+mob_max_mob: 4000
 
 # mob_player_multiplier is multiplied by the number of online players.
 # This number of how much smaller the mob cap is than mob_max_mob.
-mob_player_multiplier: 5
+mob_player_multiplier: 1
 
 # The number of ticks between invocations of the hardcap laborer for mobs.
-ticks_between_hard_cap: 40
+# Minimum allowed tick gap is 200.  Values lower than this are ignored.
+ticks_between_hard_cap: 300
 
-# Number of entities before the damage laborer cares to run.
-mob_limit: 1
+# Type of culling logic to use in the case of a hard-cap cull.
+# Options:  
+#   RANDOM - will produce random culling with equal weight to every living entity.
+#   PRIORITY - will produce priority based culling
+#
+# On priority based culling, we keep mobs in descending priority order.
+#     Priority 1 - Named mob.
+#     Priority 2 - High value persistent mobs (horses, villagers).
+#       Golems specifically not added as they can be auto'ed leading to an unfortunate culling scenario.
+#     Priority 3 - tame wolves, colored sheep, tame cats.
+#     Priority 4 - low value persistent mobs.
+#     Non Priority - non persistent mobs.
+hard_cap_culling_strategy: PRIORITY
 
-# Percent of total entities a mob must be to be queued for damage.
-mob_limit_percent: 1
+# For the hard cap culling using priority culling strategy, what is the percent
+#   of total mob population that a super-chunk (6 chunks) needs to contain in order to 
+#   trigger a penalty purge.  This would require running a purge specifically against this 
+#   chunk in order to get the mob-counts in this chunk back to the average mob-per-chunk
+#   serverwide.
+#
+# Setting this value too high (disabling it in essence) will allow players to cause global cullings by 
+#   by having high priority mobs (named/leash/horses) in large densities in their own chunks without
+#   a problem.  By setting this to a reasonably percent, these player chunks would be first targeted
+#   by a culling in order to bring them down to the average mob-per-chunk value.
+#
+# NOTE:  a value of 100 = 100%, a value of 15 = 15%, etc.
+hard_cap_culling_priority_strategy_penalty_mob_percent: 10
