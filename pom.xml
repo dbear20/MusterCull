@@ -6,13 +6,15 @@
   <groupId>com.untamedears.mustercull</groupId>
   <artifactId>MusterCull</artifactId>
   <packaging>jar</packaging>
-  <version>1.4.1-SNAPSHOT</version>
+  <version>1.4.1-${build.number}</version>
   <name>MusterCull</name>
-  <url>https://github.com/ttk2/MusterCull</url>
+  <url>https://github.com/Civcraft/MusterCull</url>
   
   <properties>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <build.number>SNAPSHOT</build.number>
   </properties>
   
   <build>
@@ -22,6 +24,7 @@
       <resource>
         <directory>${basedir}/MusterCull</directory>
         <includes>
+          <include>**/*.java</include>
           <include>*.yml</include>
         </includes>
       </resource>
