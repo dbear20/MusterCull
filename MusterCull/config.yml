@@ -5,151 +5,151 @@
 limits:
 - type: CREEPER
   culling: SPAWN
-  limit: 20
-  range: 10
+  limit: 10
+  range: 5
 - type: CREEPER
   culling: DAMAGE
-  limit: 50
-  range: 30
+  limit: 25
+  range: 15
 - type: SKELETON
   culling: SPAWNER
-  limit: 50
-  range: 30
+  limit: 20
+  range: 15
 - type: SKELETON
   culling: SPAWN
-  limit: 20
-  range: 10
+  limit: 10
+  range: 5
 - type: SKELETON
   culling: DAMAGE
-  limit: 50
-  range: 30
+  limit: 25
+  range: 15
 - type: SPIDER
   culling: SPAWNER
-  limit: 50
-  range: 30
+  limit: 20
+  range: 15
 - type: SPIDER
   culling: SPAWN
-  limit: 20
-  range: 10
+  limit: 10
+  range: 5
 - type: SPIDER
   culling: DAMAGE
-  limit: 50
-  range: 30
+  limit: 25
+  range: 15
 - type: ZOMBIE
   culling: SPAWNER
-  limit: 50
-  range: 30
+  limit: 20
+  range: 15
 - type: ZOMBIE
   culling: SPAWN
-  limit: 20
-  range: 10
+  limit: 10
+  range: 5
 - type: ZOMBIE
   culling: DAMAGE
-  limit: 50
-  range: 30
+  limit: 25
+  range: 15
 - type: CAVESPIDER
   culling: SPAWNER
-  limit: 50
-  range: 30
+  limit: 20
+  range: 15
 - type: BLAZE
   culling: SPAWNER
-  limit: 50
-  range: 30
-- type: PIG
-  culling: DAMAGE
-  limit: 30
-  range: 5
-- type: PIG
-  culling: SPAWN
-  limit: 30
-  range: 5
-- type: SHEEP
-  culling: DAMAGE
-  limit: 30
-  range: 5
-- type: SHEEP
-  culling: SPAWN
-  limit: 30
-  range: 5
-- type: COW
-  culling: DAMAGE
-  limit: 30
-  range: 5
-- type: COW
-  culling: SPAWN
-  limit: 30
-  range: 5
-- type: CHICKEN
-  culling: DAMAGE
-  limit: 30
-  range: 5
-- type: CHICKEN
-  culling: SPAWN
-  limit: 30
-  range: 5
-- type: SQUID
-  culling: DAMAGE
-  limit: 50
-  range: 5
-- type: SQUID
-  culling: SPAWN
-  limit: 50
-  range: 5
-- type: WOLF
-  culling: DAMAGE
-  limit: 30
-  range: 50
-- type: WOLF
-  culling: SPAWN
-  limit: 30
-  range: 50
-- type: MUSHROOMCOW
-  culling: DAMAGE
-  limit: 30
-  range: 8
-- type: MUSHROOMCOW
-  culling: SPAWN
-  limit: 30
-  range: 8
-- type: SNOWMAN
-  culling: DAMAGE
-  limit: 30
-  range: 50
-- type: SNOWMAN
-  culling: SPAWN
-  limit: 30
-  range: 50
-- type: OZELOT
-  culling: DAMAGE
-  limit: 50
-  range: 5
-- type: OZELOT
-  culling: SPAWN
-  limit: 50
-  range: 5
-- type: VILLAGERGOLEM
-  culling: DAMAGE
-  limit: 50
-  range: 5
-- type: VILLAGERGOLEM
-  culling: SPAWN
-  limit: 50
-  range: 5
-- type: VILLAGER
-  culling: DAMAGE
-  limit: 50
-  range: 5
-- type: VILLAGER
-  culling: SPAWN
-  limit: 50
-  range: 5
-- type: PIGZOMBIE
-  limit: 50
-  culling: SPAWN
-  range: 250
-- type: PIGZOMBIE
-  culling: DAMAGE
   limit: 20
+  range: 15
+- type: PIG
+  culling: DAMAGE
+  limit: 30
+  range: 5
+- type: PIG
+  culling: SPAWN
+  limit: 30
+  range: 5
+- type: SHEEP
+  culling: DAMAGE
+  limit: 30
+  range: 5
+- type: SHEEP
+  culling: SPAWN
+  limit: 30
+  range: 5
+- type: COW
+  culling: DAMAGE
+  limit: 30
+  range: 5
+- type: COW
+  culling: SPAWN
+  limit: 30
+  range: 5
+- type: CHICKEN
+  culling: DAMAGE
+  limit: 30
+  range: 5
+- type: CHICKEN
+  culling: SPAWN
+  limit: 30
+  range: 5
+- type: SQUID
+  culling: DAMAGE
+  limit: 50
+  range: 5
+- type: SQUID
+  culling: SPAWN
+  limit: 50
+  range: 5
+- type: WOLF
+  culling: DAMAGE
+  limit: 25
+  range: 15
+- type: WOLF
+  culling: SPAWN
+  limit: 25
+  range: 15
+- type: MUSHROOMCOW
+  culling: DAMAGE
+  limit: 30
+  range: 8
+- type: MUSHROOMCOW
+  culling: SPAWN
+  limit: 30
+  range: 8
+- type: SNOWMAN
+  culling: DAMAGE
+  limit: 3
+  range: 5
+- type: SNOWMAN
+  culling: SPAWN
+  limit: 3
+  range: 5
+- type: OZELOT
+  culling: DAMAGE
+  limit: 50
+  range: 5
+- type: OZELOT
+  culling: SPAWN
+  limit: 50
+  range: 5
+- type: VILLAGERGOLEM
+  culling: DAMAGE
+  limit: 50
+  range: 5
+- type: VILLAGERGOLEM
+  culling: SPAWN
+  limit: 50
+  range: 5
+- type: VILLAGER
+  culling: DAMAGE
+  limit: 50
+  range: 5
+- type: VILLAGER
+  culling: SPAWN
+  limit: 50
+  range: 5
+- type: PIGZOMBIE
+  limit: 3
+  culling: SPAWN
+  range: 5
+- type: PIGZOMBIE
+  culling: DAMAGE
+  limit: 10
   range: 5
 
 # The amount of damage to apply to mobs which are considered crowded under the
@@ -192,7 +192,7 @@ mob_max_mob: 4000
 
 # mob_player_multiplier is multiplied by the number of online players.
 # This number of how much smaller the mob cap is than mob_max_mob.
-mob_player_multiplier: 1
+mob_player_multiplier: 6
 
 # The number of ticks between invocations of the hardcap laborer for mobs.
 # Minimum allowed tick gap is 200.  Values lower than this are ignored.
