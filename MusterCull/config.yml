@@ -13,7 +13,7 @@ limits:
   range: 15
 - type: SKELETON
   culling: SPAWNER
-  limit: 20
+  limit: 30
   range: 15
 - type: SKELETON
   culling: SPAWN
@@ -25,7 +25,7 @@ limits:
   range: 15
 - type: SPIDER
   culling: SPAWNER
-  limit: 20
+  limit: 30
   range: 15
 - type: SPIDER
   culling: SPAWN
@@ -37,7 +37,7 @@ limits:
   range: 15
 - type: ZOMBIE
   culling: SPAWNER
-  limit: 20
+  limit: 30
   range: 15
 - type: ZOMBIE
   culling: SPAWN
@@ -49,11 +49,11 @@ limits:
   range: 15
 - type: CAVESPIDER
   culling: SPAWNER
-  limit: 20
+  limit: 30
   range: 15
 - type: BLAZE
   culling: SPAWNER
-  limit: 20
+  limit: 30
   range: 15
 - type: PIG
   culling: DAMAGE
