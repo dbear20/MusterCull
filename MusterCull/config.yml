@@ -164,7 +164,7 @@ damage_chance: 100
 damage_count: 30
 
 # The number of ticks between invocations of the damage method for mobs.
-ticks_between_damage: 20
+ticks_between_damage: 10
 
 # Number of entities before the damage laborer cares to run.
 mob_limit: 10
