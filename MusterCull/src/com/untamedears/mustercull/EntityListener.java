@@ -43,7 +43,7 @@ public class EntityListener extends Listener {
 		ConfigurationLimit limit = null;
 		
 		if (!this.getPluginInstance().isPaused(CullType.SPAWNER)) {
-			if (event.getSpawnReason() == SpawnReason.SPAWNER) {
+			if (event.getSpawnReason() == SpawnReason.SPAWNER || event.getSpawnReason() == SpawnReason.NETHER_PORTAL) {
 				
 				limit = this.getPluginInstance().getLimit(entity.getType(), CullType.SPAWNER);
 				
