@@ -151,6 +151,10 @@ limits:
   culling: DAMAGE
   limit: 10
   range: 5
+  type: PIGZOMBIE
+  culling: SPAWNER
+  limit: 20
+  range: 30
 
 # The amount of damage to apply to mobs which are considered crowded under the
 # DAMAGE method of culling.
@@ -161,7 +165,7 @@ damage: 20
 damage_chance: 100
 
 # The number of entities to damage each round of the laborer.
-damage_count: 30
+damage_count: 100
 
 # The number of ticks between invocations of the damage method for mobs.
 ticks_between_damage: 10
@@ -224,4 +228,4 @@ hard_cap_culling_strategy: PRIORITY
 #   by a culling in order to bring them down to the average mob-per-chunk value.
 #
 # NOTE:  a value of 100 = 100%, a value of 15 = 15%, etc.
-hard_cap_culling_priority_strategy_penalty_mob_percent: 10
+hard_cap_culling_priority_strategy_penalty_mob_percent: 9
