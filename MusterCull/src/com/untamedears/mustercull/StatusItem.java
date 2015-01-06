@@ -1,9 +1,10 @@
 package com.untamedears.mustercull;
 
+import java.util.List;
+
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.HumanEntity;
-
-import java.util.List;
+import org.bukkit.entity.Item;
 
 /**
  * Stores information about players and surrounding mobs for status checks.
@@ -24,6 +25,10 @@ public class StatusItem {
 	 */
 	private int nearbyEntityCount = 0;
 	
+	/**
+	 * The number of items surrounding for this player
+	 */
+	private int nearbyItemCount = 0;
 	
 	/**
 	 * Constructor which sets the entity
@@ -34,6 +39,9 @@ public class StatusItem {
 		if (this.entity != null) {
 			List<Entity> entities = entity.getNearbyEntities(48, 256, 48);
 			this.nearbyEntityCount = entities.size();
+			for (Entity e: entities)
+				if (e instanceof Item)
+					nearbyItemCount++;
 		}
 	}
 	
@@ -51,5 +59,12 @@ public class StatusItem {
 	 */
 	public int getNearbyEntityCount() {
 		return this.nearbyEntityCount;
+	}
+	
+	/**
+	 * Returns the number of nearby items surrounding this entity
+	 */
+	public int getNearbyItemCount(){
+		return nearbyItemCount;
 	}
 }

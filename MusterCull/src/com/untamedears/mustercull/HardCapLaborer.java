@@ -1,20 +1,5 @@
 package com.untamedears.mustercull;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Chunk;
-import org.bukkit.DyeColor;
-import org.bukkit.World;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Ghast;
-import org.bukkit.entity.IronGolem;
-import org.bukkit.entity.LivingEntity;
-import org.bukkit.entity.Monster;
-import org.bukkit.entity.Player;
-import org.bukkit.entity.Skeleton;
-import org.bukkit.entity.Skeleton.SkeletonType;
-import org.bukkit.entity.Wither;
-
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -26,6 +11,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Chunk;
+import org.bukkit.DyeColor;
+import org.bukkit.World;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.IronGolem;
+import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Monster;
+import org.bukkit.entity.Player;
+import org.bukkit.entity.Skeleton;
+import org.bukkit.entity.Skeleton.SkeletonType;
+import org.bukkit.entity.Wither;
 
 /**
  * This class performs damage to mobs using the DAMAGE CullType.

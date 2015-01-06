@@ -269,7 +269,8 @@ public class Commander implements CommandExecutor {
 				break;
 			}
 			else {
-				sender.sendMessage("Player " + status.getEntity().getName() + " surrounded by " + status.getNearbyEntityCount() + " entities.");
+				sender.sendMessage("Player " + status.getEntity().getName() + " surrounded by " + status.getNearbyEntityCount() + " entities." +
+			" Of which " + status.getNearbyItemCount() + " are items.");
 				reported = true;
 			}
 		}
