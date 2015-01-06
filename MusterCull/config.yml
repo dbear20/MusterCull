@@ -57,59 +57,59 @@ limits:
   range: 15
 - type: PIG
   culling: DAMAGE
-  limit: 30
+  limit: 15
   range: 5
 - type: PIG
   culling: SPAWN
-  limit: 30
+  limit: 15
   range: 5
 - type: SHEEP
   culling: DAMAGE
-  limit: 30
+  limit: 15
   range: 5
 - type: SHEEP
   culling: SPAWN
-  limit: 30
+  limit: 15
   range: 5
 - type: COW
   culling: DAMAGE
-  limit: 30
+  limit: 15
   range: 5
 - type: COW
   culling: SPAWN
-  limit: 30
+  limit: 15
   range: 5
 - type: CHICKEN
   culling: DAMAGE
-  limit: 30
+  limit: 15
   range: 5
 - type: CHICKEN
   culling: SPAWN
-  limit: 30
+  limit: 15
   range: 5
 - type: SQUID
   culling: DAMAGE
-  limit: 50
+  limit: 5
   range: 5
 - type: SQUID
   culling: SPAWN
-  limit: 50
+  limit: 5
   range: 5
 - type: WOLF
   culling: DAMAGE
-  limit: 25
+  limit: 20
   range: 15
 - type: WOLF
   culling: SPAWN
-  limit: 25
+  limit: 20
   range: 15
 - type: MUSHROOMCOW
   culling: DAMAGE
-  limit: 30
+  limit: 20
   range: 8
 - type: MUSHROOMCOW
   culling: SPAWN
-  limit: 30
+  limit: 20
   range: 8
 - type: SNOWMAN
   culling: DAMAGE
@@ -121,27 +121,27 @@ limits:
   range: 5
 - type: OZELOT
   culling: DAMAGE
-  limit: 50
+  limit: 15
   range: 5
 - type: OZELOT
   culling: SPAWN
-  limit: 50
+  limit: 15
   range: 5
 - type: VILLAGERGOLEM
   culling: DAMAGE
-  limit: 50
+  limit: 15
   range: 5
 - type: VILLAGERGOLEM
   culling: SPAWN
-  limit: 50
+  limit: 15
   range: 5
 - type: VILLAGER
   culling: DAMAGE
-  limit: 50
+  limit: 10
   range: 5
 - type: VILLAGER
   culling: SPAWN
-  limit: 50
+  limit: 10
   range: 5
 - type: PIGZOMBIE
   limit: 3
