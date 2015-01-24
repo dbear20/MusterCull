@@ -144,17 +144,17 @@ limits:
   limit: 10
   range: 5
 - type: PIGZOMBIE
-  limit: 3
+  limit: 1
   culling: SPAWN
-  range: 5
+  range: 32
 - type: PIGZOMBIE
   culling: DAMAGE
-  limit: 10
-  range: 5
+  limit: 1
+  range: 10
 - type: PIGZOMBIE
   culling: SPAWNER
-  limit: 20
-  range: 30
+  limit: 1
+  range: 32
 - type: ENTITYHORSE
   culling: DAMAGE
   limit: 25
