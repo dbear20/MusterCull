@@ -6,163 +6,163 @@ limits:
 - type: CREEPER
   culling: SPAWN
   limit: 10
-  range: 5
+  range: 100
 - type: CREEPER
   culling: DAMAGE
-  limit: 25
-  range: 15
+  limit: 10
+  range: 100
 - type: SKELETON
   culling: SPAWNER
-  limit: 30
-  range: 15
+  limit: 20
+  range: 100
 - type: SKELETON
   culling: SPAWN
-  limit: 10
-  range: 5
+  limit: 20
+  range: 100
 - type: SKELETON
   culling: DAMAGE
-  limit: 25
-  range: 15
+  limit: 20
+  range: 100
 - type: SPIDER
   culling: SPAWNER
-  limit: 30
-  range: 15
+  limit: 10
+  range: 100
 - type: SPIDER
   culling: SPAWN
   limit: 10
-  range: 5
+  range: 100
 - type: SPIDER
   culling: DAMAGE
-  limit: 25
-  range: 15
+  limit: 10
+  range: 100
 - type: ZOMBIE
   culling: SPAWNER
-  limit: 30
-  range: 15
+  limit: 10
+  range: 100
 - type: ZOMBIE
   culling: SPAWN
   limit: 10
-  range: 5
+  range: 100
 - type: ZOMBIE
   culling: DAMAGE
-  limit: 25
-  range: 15
+  limit: 10
+  range: 100
 - type: CAVESPIDER
   culling: SPAWNER
-  limit: 30
-  range: 15
+  limit: 20
+  range: 100
 - type: BLAZE
   culling: SPAWNER
-  limit: 30
-  range: 15
+  limit: 15
+  range: 100
 - type: PIG
   culling: DAMAGE
-  limit: 15
-  range: 5
+  limit: 20
+  range: 100
 - type: PIG
   culling: SPAWN
-  limit: 15
-  range: 5
+  limit: 20
+  range: 100
 - type: SHEEP
   culling: DAMAGE
-  limit: 15
-  range: 5
+  limit: 20
+  range: 100
 - type: SHEEP
   culling: SPAWN
-  limit: 15
-  range: 5
+  limit: 20
+  range: 100
 - type: COW
   culling: DAMAGE
-  limit: 15
-  range: 5
+  limit: 20
+  range: 100
 - type: COW
   culling: SPAWN
-  limit: 15
-  range: 5
+  limit: 20
+  range: 100
 - type: CHICKEN
   culling: DAMAGE
-  limit: 15
-  range: 5
+  limit: 20
+  range: 100
 - type: CHICKEN
   culling: SPAWN
-  limit: 15
-  range: 5
+  limit: 20
+  range: 100
 - type: SQUID
   culling: DAMAGE
   limit: 5
-  range: 5
+  range: 100
 - type: SQUID
   culling: SPAWN
   limit: 5
-  range: 5
+  range: 100
 - type: WOLF
   culling: DAMAGE
-  limit: 20
-  range: 15
+  limit: 10
+  range: 100
 - type: WOLF
   culling: SPAWN
-  limit: 20
-  range: 15
+  limit: 10
+  range: 100
 - type: MUSHROOMCOW
   culling: DAMAGE
   limit: 20
-  range: 8
+  range: 100
 - type: MUSHROOMCOW
   culling: SPAWN
   limit: 20
-  range: 8
+  range: 100
 - type: SNOWMAN
   culling: DAMAGE
-  limit: 3
-  range: 5
+  limit: 10
+  range: 100
 - type: SNOWMAN
   culling: SPAWN
-  limit: 3
-  range: 5
+  limit: 10
+  range: 100
 - type: OZELOT
   culling: DAMAGE
-  limit: 15
-  range: 5
+  limit: 10
+  range: 100
 - type: OZELOT
   culling: SPAWN
-  limit: 15
-  range: 5
+  limit: 10
+  range: 100
 - type: VILLAGERGOLEM
   culling: DAMAGE
-  limit: 15
-  range: 5
+  limit: 10
+  range: 100
 - type: VILLAGERGOLEM
   culling: SPAWN
-  limit: 15
-  range: 5
+  limit: 10
+  range: 100
 - type: VILLAGER
   culling: DAMAGE
   limit: 10
-  range: 5
+  range: 100
 - type: VILLAGER
   culling: SPAWN
   limit: 10
-  range: 5
+  range: 100
 - type: PIGZOMBIE
-  limit: 1
   culling: SPAWN
-  range: 32
+  limit: 15
+  range: 200
 - type: PIGZOMBIE
   culling: DAMAGE
-  limit: 1
-  range: 10
+  limit: 15
+  range: 200
 - type: PIGZOMBIE
   culling: SPAWNER
-  limit: 1
-  range: 32
+  limit: 15
+  range: 200
 - type: ENTITYHORSE
   culling: DAMAGE
-  limit: 25
-  range: 5
+  limit: 15
+  range: 100
 - type: ENTITYHORSE
   culling: SPAWN
-  limit: 25
-  range: 5
+  limit: 15
+  range: 100
 
 # The amount of damage to apply to mobs which are considered crowded under the
 # DAMAGE method of culling.
@@ -200,7 +200,7 @@ max_monster_cull_aggression: 10
 max_monster_cull_per_pass: 10
 
 # The maximum number of living entities allowed to be loaded.
-mob_max_mob: 4000
+mob_max_mob: 5000
 
 # mob_player_multiplier is multiplied by the number of online players.
 # This number of how much smaller the mob cap is than mob_max_mob.
