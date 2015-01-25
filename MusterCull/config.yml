@@ -144,8 +144,8 @@ limits:
   limit: 10
   range: 5
 - type: PIGZOMBIE
-  limit: 1
   culling: SPAWN
+  limit: 1
   range: 32
 - type: PIGZOMBIE
   culling: DAMAGE
