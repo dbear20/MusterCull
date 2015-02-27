@@ -163,6 +163,38 @@ limits:
   culling: SPAWN
   limit: 15
   range: 100
+- type: ENDERMAN
+  culling: DAMAGE
+  limit: 5
+  range: 100
+- type: ENDERMAN
+  culling: SPAWN
+  limit: 5
+  range: 100
+- type: LAVASLIME
+  culling: DAMAGE
+  limit: 5
+  range: 100
+- type: LAVASLIME
+  culling: SPAWN
+  limit: 5
+  range: 100
+- type: SLIME
+  culling: DAMAGE
+  limit: 5
+  range: 100
+- type: SLIME
+  culling: SPAWN
+  limit: 5
+  range: 100
+- type: GHAST
+  culling: DAMAGE
+  limit: 5
+  range: 100
+- type: GHAST
+  culling: SPAWN
+  limit: 5
+  range: 100
 
 # The amount of damage to apply to mobs which are considered crowded under the
 # DAMAGE method of culling.
