@@ -450,16 +450,15 @@ public class MusterCull extends JavaPlugin {
 	 * Returns nearby entities to a player by name.
 	 * @param playerName The name of a player to look up
 	 * @param rangeX Distance along the x plane to look from player
-	 * @param rangeY Distance along the y plane to look from player
 	 * @param rangeZ Distance along the z plane to look from player
 	 * @return The list of entities surrounding the player
 	 */
-	public List<Entity> getNearbyEntities(String playerName, int rangeX, int rangeY, int rangeZ) {
+	public List<Entity> getNearbyEntities(String playerName, int rangeX, int rangeZ) {
 		
 		for (World world : getServer().getWorlds()) {
 			for (Player player : world.getPlayers()) {
 				if (0 == player.getName().compareToIgnoreCase(playerName)) {
-					return player.getNearbyEntities(rangeX, rangeY, rangeZ);
+					return player.getNearbyEntities(rangeX, player.getWorld().getMaxHeight(), rangeZ);
 				}
 			}
 		}
@@ -480,7 +479,7 @@ public class MusterCull extends JavaPlugin {
 	
 		int count = 0;
 		
-		List<Entity> nearbyEntities = getNearbyEntities(playerName, range, range, range);
+		List<Entity> nearbyEntities = getNearbyEntities(playerName, range, range);
 		
 		if (nearbyEntities == null) {
 			return 0;
@@ -558,7 +557,7 @@ public class MusterCull extends JavaPlugin {
 		// Loop through entities in range and count similar entities.
 		int count = 0;
 		
-		for (Entity otherEntity : entity.getNearbyEntities(limit.getRange(), limit.getRange(), limit.getRange())) {
+		for (Entity otherEntity : entity.getNearbyEntities(limit.getRange(), entity.getWorld().getMaxHeight(), limit.getRange())) {
 			if (0 == otherEntity.getType().compareTo(entity.getType())) {
 				count += 1;
 				
