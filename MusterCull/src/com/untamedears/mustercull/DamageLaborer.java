@@ -56,7 +56,7 @@ public class DamageLaborer extends Laborer {
 			// Loop through entities in range and count similar entities.
 			int count = 0;
 			
-			for (Entity otherEntity : entity.getNearbyEntities(limit.getRange(), limit.getRange(), limit.getRange())) {
+			for (Entity otherEntity : entity.getNearbyEntities(limit.getRange(), entity.getWorld().getMaxHeight(), limit.getRange())) {
 				if (0 == otherEntity.getType().compareTo(entity.getType())) {
 					
 					count += 1;
